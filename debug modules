@@ -1,0 +1,12 @@
+---
+
+- name: to print a msg
+  hosts: all
+  vars:
+    hello: sahil
+  tasks:
+    - name: to print a msg
+      debug: 'msg="{{ hello }}"'
+
+
+ansible all -m debug -a 'msg="hello"'
