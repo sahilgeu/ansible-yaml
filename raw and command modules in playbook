@@ -1,0 +1,10 @@
+
+- name: to run command and raw module
+  hosts: all
+  tasks:
+    - name: to run command module
+      command: lsblk
+    - name: to run raw module
+      raw: |
+         touch file1
+         ls -ltr
